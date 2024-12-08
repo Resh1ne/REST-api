@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.button {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    background-color: #4CAF50;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.button.danger {
+    background-color: #f44336;
+}
+
+.button.danger:hover {
+    background-color: #e53935;
+}
+
+.button.back {
+    background-color: #2196F3;
+    margin-top: 10px;
+}
+
+.button.back:hover {
+    background-color: #1e88e5;
+}
+
+form {
+    display: inline;
+}
+    </style>
+</head>
+<body>
+<header>
+    <h1>Cat List</h1>
+</header>
+<main>
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Weight</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="cat : ${cats}">
+            <td th:text="${cat.id}">1</td>
+            <td th:text="${cat.name}">Whiskers</td>
+            <td th:text="${cat.age}">3</td>
+            <td th:text="${cat.weight}">4.5</td>
+            <td>
+                <a th:href="@{/edit/{id}(id=${cat.id})}" class="button">Edit</a>
+                <form th:action="@{/delete/{id}(id=${cat.id})}" method="post" style="display:inline;">
+                    <button type="submit" class="button danger">Delete</button>
+                </form>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <a href="/add" class="button">Add New Cat</a>
+    <a href="/" class="button back">Back to Home</a>
+</main>
+</body>
+</html>

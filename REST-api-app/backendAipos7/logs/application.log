@@ -1,0 +1,35 @@
+2024-12-07 12:59:18 - Starting AiposApplication using Java 17.0.11 with PID 7668 (C:\Users\User\IdeaProjects\backendAipos7\target\classes started by Daniil in C:\Users\User\IdeaProjects\backendAipos7)
+2024-12-07 12:59:18 - Running with Spring Boot v3.4.0, Spring v6.2.0
+2024-12-07 12:59:18 - No active profile set, falling back to 1 default profile: "default"
+2024-12-07 12:59:19 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-07 12:59:20 - Finished Spring Data repository scanning in 105 ms. Found 1 JPA repository interface.
+2024-12-07 12:59:20 - Tomcat initialized with port 8081 (http)
+2024-12-07 12:59:20 - Starting service [Tomcat]
+2024-12-07 12:59:20 - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-07 12:59:20 - Initializing Spring embedded WebApplicationContext
+2024-12-07 12:59:20 - Root WebApplicationContext: initialization completed in 2261 ms
+2024-12-07 12:59:21 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-07 12:59:21 - HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-07 12:59:21 - HHH000026: Second-level cache disabled
+2024-12-07 12:59:21 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-07 12:59:21 - HikariPool-1 - Starting...
+2024-12-07 12:59:22 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4ff66917
+2024-12-07 12:59:22 - HikariPool-1 - Start completed.
+2024-12-07 12:59:22 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-07 12:59:23 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-07 12:59:23 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-07 12:59:23 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-07 12:59:24 - Tomcat started on port 8081 (http) with context path '/'
+2024-12-07 12:59:24 - Started AiposApplication in 6.457 seconds (process running for 7.094)
+2024-12-07 12:59:27 - Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-07 12:59:27 - Graceful shutdown complete
+2024-12-07 12:59:27 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-07 12:59:27 - HikariPool-1 - Shutdown initiated...
+2024-12-07 12:59:27 - HikariPool-1 - Shutdown completed.
